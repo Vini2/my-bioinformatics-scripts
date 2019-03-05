@@ -1,0 +1,5 @@
+Bash command
+-------------
+
+# Edit file paths
+python separate-sequences.py
