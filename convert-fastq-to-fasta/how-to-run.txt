@@ -1,0 +1,4 @@
+Bash command
+-------------
+
+python convert-fastq-to-fasta.py
