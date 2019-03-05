@@ -1,0 +1,4 @@
+Bash command
+-------------
+
+perl removesmalls.pl 200 contigs.fasta > contigs-l200.fasta
