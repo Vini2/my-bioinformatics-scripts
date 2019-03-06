@@ -1,0 +1,4 @@
+Bash command
+-------------
+
+bash count-fasta-sequences.sh
