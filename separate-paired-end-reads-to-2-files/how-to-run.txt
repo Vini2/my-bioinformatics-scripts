@@ -1,0 +1,4 @@
+Bash command
+-------------
+
+python separate-paired-end-reads.py
