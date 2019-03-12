@@ -1,0 +1,4 @@
+Bash command
+-------------
+
+bash rename-entries-fasta.sh
