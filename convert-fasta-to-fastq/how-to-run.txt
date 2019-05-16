@@ -1,0 +1,6 @@
+Obtained from https://code.google.com/archive/p/fasta-to-fastq/
+
+Bash command
+-------------
+
+perl fasta_to_fastq.pl /path/to/fasta/file.fasta > /path/to/fastq/file.fastq
