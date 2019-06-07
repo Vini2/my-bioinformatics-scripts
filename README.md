@@ -9,5 +9,6 @@ Listed below are the scripts available.
 * Rename entries in a fasta file
 * Rename entries in a fastq file
 * Separate paired end reads into two files
+* Separate reads by read IDs from a fastq reads file
 * Separate a set of sequences into individual files
 * Sort files in the order humans expect
