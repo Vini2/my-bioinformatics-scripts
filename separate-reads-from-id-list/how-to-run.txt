@@ -1,0 +1,9 @@
+Files
+------
+list.lst 	- the list of required read IDs, one ID per line.
+sequences.fq 	- the reads file from which required reads are separated.
+
+Bash command
+-------------
+
+python separate-reads-from-id-list.py
