@@ -1,0 +1,4 @@
+Bash command
+-------------
+
+sh separate-forward-reverse-paired-end-reads.sh
