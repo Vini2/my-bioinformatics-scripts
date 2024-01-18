@@ -9,18 +9,19 @@ SAM format explained: https://broadinstitute.github.io/picard/explain-flags.html
 """
 
 refs_folder = "Refs"
-nthreads = 8
+ref_format = "fasta"
 reads_file = "reads.fastq"
 intermediate_file = "all_reads.paf"
 output_file = "all_reads.output"
+nthreads = 8
 threshold = 0.5
 
 # Concatenate all references
-command = f"cat {refs_folder}/*.fna > refs.fna"
+command = f"cat {refs_folder}/*.{ref_format} > refs.{ref_format}"
 subprocess.run(command, shell=True)
 
 # Run minimap2
-command = f"minimap2 -t {nthreads} refs.fna {reads_file} > {intermediate_file}"
+command = f"minimap2 -t {nthreads} refs.{ref_format} {reads_file} > {intermediate_file}"
 subprocess.run(command, shell=True)
 
 contig_ref = defaultdict(list)
@@ -82,4 +83,7 @@ with open(f"{output_file}", "w+") as f:
             best_len = contig_ref_aln_length[k][0]
         else:
             best = "POOR MAPPING"
+
+        # Write output
+        # read name, reference name, alignment length
         f.write(f"{k}\t{best}\t{best_len}\n")
