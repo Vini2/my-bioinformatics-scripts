@@ -2,6 +2,12 @@ import subprocess
 
 from collections import defaultdict
 
+"""
+Resources:
+Minimap2: https://github.com/lh3/minimap2
+SAM format explained: https://broadinstitute.github.io/picard/explain-flags.html
+"""
+
 refs_folder = "Refs"
 nthreads = 8
 reads_file = "reads.fastq"
