@@ -1,0 +1,4 @@
+Bash command
+-------------
+
+python map.py -g genomes/ -r reads.fastq -o output_path

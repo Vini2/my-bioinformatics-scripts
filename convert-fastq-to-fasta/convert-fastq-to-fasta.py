@@ -1,5 +1,9 @@
 from Bio import SeqIO
 
+"""
+Convert a fastq file to fasta format
+"""
+
 with open("path/to/fastq/file.fastq", "r") as input_handle:
     with open("path/to/fasta/file.fasta", "w") as output_handle:
         sequences = SeqIO.parse(input_handle, "fastq")

@@ -5,7 +5,8 @@ from collections import defaultdict
 
 """
 Resources:
-Minimap2: https://github.com/lh3/minimap2
+Uses minimap2 for mapping.
+Make sure to install Minimap2 from https://github.com/lh3/minimap2 before running.
 SAM format explained: https://broadinstitute.github.io/picard/explain-flags.html
 """
 
